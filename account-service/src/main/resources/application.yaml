@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://db01:3306/accounts
+    username: appuser
+    password: devops
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MariaDBDialect
